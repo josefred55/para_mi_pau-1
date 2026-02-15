@@ -263,11 +263,11 @@ body {
 	}
 
 	.nav-menu {
-		gap: 20px;
+		gap: 15px;
 	}
 
 	.nav-link {
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 	}
 
 	.nav-logo {
@@ -277,11 +277,11 @@ body {
 
 @media (max-width: 480px) {
 	.nav-menu {
-		gap: 10px;
+		gap: 8px;
 	}
 
 	.nav-link {
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 	}
 }
 
@@ -546,6 +546,115 @@ body {
 	color: var(--cherry_red);
 	line-height: 1.6;
 	font-size: 1rem;
+}
+
+/* Carta Section */
+.carta-section {
+	background: linear-gradient(135deg, var(--cream) 0%, #f5e6e8 100%);
+	padding: 100px 40px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.carta-container {
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.carta-section h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	color: var(--cherry_red);
+	margin-bottom: 50px;
+	font-weight: 400;
+}
+
+.carta-content {
+	display: flex;
+	justify-content: center;
+}
+
+.carta-paper {
+	background: white;
+	padding: 60px;
+	border-radius: 15px;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+	position: relative;
+	border: 1px solid rgba(129, 1, 0, 0.1);
+}
+
+.carta-paper::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8px;
+	background: var(--cherry_red);
+	border-radius: 15px 15px 0 0;
+}
+
+.carta-greeting {
+	font-size: 1.4rem;
+	color: var(--cherry_red);
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.carta-paper p {
+	color: var(--cherry_red);
+	line-height: 1.9;
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.carta-closing {
+	font-style: italic;
+	font-weight: 600;
+	text-align: center !important;
+	margin-top: 30px;
+	font-size: 1.2rem;
+}
+
+/* Responsive Carta */
+@media (max-width: 768px) {
+	.carta-section {
+		padding: 60px 20px;
+	}
+
+	.carta-section h2 {
+		font-size: 2rem;
+	}
+
+	.carta-paper {
+		padding: 40px 30px;
+	}
+
+	.carta-paper p {
+		font-size: 1rem;
+		text-align: left;
+	}
+
+	.carta-greeting {
+		font-size: 1.2rem;
+	}
+
+	.carta-closing {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.carta-paper {
+		padding: 30px 20px;
+	}
+
+	.carta-paper p {
+		font-size: 0.95rem;
+	}
 }
 
 /* Footer */
